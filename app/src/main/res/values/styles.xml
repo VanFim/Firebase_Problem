@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    '<!--Learning: The following line disables the default action bar at the upper rim of the activity -->
+    '
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">//
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#f5dd82</item>
+        <item name="colorControlActivated">#efc013</item>
+    </style>
+
+
+</resources>

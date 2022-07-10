@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorGrey"
+
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/right_outer_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.49"
+        app:layout_constraintHeight_percent="0.95"
+        android:orientation="vertical"
+        android:background="@drawable/rim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rigthInnerConstraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/right_outer_constraintLayout"
+            app:layout_constraintEnd_toEndOf="@+id/right_outer_constraintLayout"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/right_outer_constraintLayout"
+
+            app:layout_constraintTop_toTopOf="@+id/right_outer_constraintLayout"
+            app:layout_constraintVertical_bias="1.0">
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_drinksToBeDisplayed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/textView_numberToBePreparedLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/rigthInnerConstraintLayout" />
+
+            <TextView
+                android:id="@+id/textView_numberToBePreparedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="Active elements: "
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/textView_numberToBePreparedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toEndOf="@+id/textView_numberToBePreparedLabel"
+                app:layout_constraintTop_toTopOf="@+id/textView_numberToBePreparedLabel" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView_queryTextConventional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Returned items (conventional query): "
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_queryTextConventional_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="7dp"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_queryTextConventional"
+        app:layout_constraintStart_toEndOf="@+id/textView_queryTextConventional"
+        app:layout_constraintTop_toTopOf="@+id/textView_queryTextConventional" />
+
+    <TextView
+        android:id="@+id/textView_queryTextGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Returned items (Get query): "
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/textView_queryTextGet_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="7dp"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_queryTextGet"
+        app:layout_constraintStart_toEndOf="@+id/textView_queryTextGet"
+        app:layout_constraintTop_toTopOf="@+id/textView_queryTextGet" />
+
+
+    <Button
+        android:id="@+id/buttonAction"
+        android:layout_width="140dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_button"
+        android:text="Execute Query"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_queryTextGet_Number"
+        app:layout_constraintStart_toStartOf="@+id/textView_queryTextGet"
+        app:layout_constraintTop_toBottomOf="@+id/textView_queryTextGet_Number" />
+</androidx.constraintlayout.widget.ConstraintLayout>

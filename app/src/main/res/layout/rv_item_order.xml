@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_itemOrder"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48sdp"
+    android:foreground="@drawable/cardview_foreground_rim"
+
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+
+
+    app:cardUseCompatPadding="false"
+    app:contentPadding="@dimen/_1sdp"
+    app:cardPreventCornerOverlap="false"
+
+
+    app:contentPaddingBottom="0dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_orderName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.21"
+            android:text="Test"
+            android:textSize="@dimen/_8sdp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_orderName"
+            android:background="#bcbcbc" />
+
+
+
+        <TextView
+            android:id="@+id/tv_orderInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintWidth_percent="0.29"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/_7sdp"
+            app:layout_constraintStart_toEndOf="@+id/line1"
+
+            />
+
+
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_orderInfo"
+            android:background="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/textView_TimeLabel"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Time"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/line2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintWidth_percent="0.12" />
+
+        <TextView
+            android:id="@+id/textView_Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="22:22"
+            android:textSize="@dimen/_8sdp"
+
+            app:layout_constraintStart_toEndOf="@+id/line2"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TimeLabel"
+
+            app:layout_constraintWidth_percent="0.12" />
+
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_Time"
+            android:background="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/textView_TableLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Table"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/line4"
+            app:layout_constraintStart_toEndOf="@+id/line3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+ />
+
+        <TextView
+            android:id="@+id/textView_Table"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.11"
+            android:text="10"
+            android:textSize="@dimen/_8sdp"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView_TableLabel"
+            app:layout_constraintStart_toEndOf="@+id/line3"
+            />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#bcbcbc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_Table"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

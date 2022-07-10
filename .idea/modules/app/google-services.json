@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "541319444643",
+    "firebase_url": "https://drink-server-db-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "drink-server-db",
+    "storage_bucket": "drink-server-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541319444643:android:1bf25e6ade08e7e94ca716",
+        "android_client_info": {
+          "package_name": "com.example.drinkserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541319444643-hprl5l97fsnfeuj0tn1gpmmq18inpbfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATPc8gtuLmqMLCHEK1s-B81MrmDVx6H0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541319444643-hprl5l97fsnfeuj0tn1gpmmq18inpbfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541319444643:android:f1fde19f307e2e1a4ca716",
+        "android_client_info": {
+          "package_name": "com.example.td.barapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541319444643-hprl5l97fsnfeuj0tn1gpmmq18inpbfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATPc8gtuLmqMLCHEK1s-B81MrmDVx6H0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541319444643-hprl5l97fsnfeuj0tn1gpmmq18inpbfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
